@@ -7,7 +7,12 @@ $psword = "adminVP999*";
 if(isset($_POST['login'])){
    $username = $_POST['username'];
    $password = $_POST['password'];
+
+   $_SESSION['LOGIN']=false;
+
    if($username == $uname && $password == $psword){
+      $_SESSION['user_name']=$username;
+      $_SESSION['LOGIN']=true;
 ?>
    <script>
       window.location.href='index.php';

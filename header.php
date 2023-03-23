@@ -1,3 +1,17 @@
+<?php
+session_start();
+
+if(isset($_SESSION['LOGIN'])!=true){
+?>
+
+<script>
+  window.location.href='login.php';
+</script>
+
+<?php
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +34,9 @@
 <!-- Style CSS -->
 <link rel="stylesheet" href="css/style.css">
 
+<!-- Responsive -->
+<link rel="stylesheet" type="text/css"  href="css/responsive.css">
+
 </head>
 
 <body>
@@ -33,9 +50,9 @@
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
               <ul>
-                <li class="fa fa-user"><a href="#"></a></li>
+                <li class="fa fa-user"><a href="#"><?php echo $_SESSION['user_name'] ?></a></li>
                 <li><a href="#">Find Reservations</a></li>
-                <li><a href="#">Log Out</a></li>
+                <li><a href="logout.php" type="submit" name="logout">Log Out</a></li>
               </ul>
             </div>
           </div>
@@ -46,9 +63,6 @@
             <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div class="logo-area"> <a href="#"><img class="img-responsive" src="img/sla.png" alt="logo"></a></div>
             </div>
-            <!-- <button type="button" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navbar">
-              <span class="navbar-toggler-icon"></span>
-            </button> -->
             <div class="col-lg-7 col-md-7 col-sm-9 col-xs-12">
               <div class="main-menu">
                 <nav>
@@ -77,19 +91,57 @@
                   <li>
                     <div class="header-top-search search-box">
                       <form>
-                        <input class="search-text" type="text"  placeholder="Find a hotel">
-                        <a class="search-button" href="#"> <i class="#" aria-hidden="true"></i> </a>
+                        <a href="#"><i class="fa fa-search" style="width:10px; height:16px;">
+                        <input class="search-text" type="text" placeholder="Find a hotel"></i> </a>
                       </form>
                     </div>
                   </li>
                 </ul>
               </div>
+              <!-- <div class="side-menu-area" id="side-menu-area">
+                <div id="mySidenav" class="sidenav"><a href="#" class="closebtn">×</a>
+                  <span class="side-menu-open side-menu-trigger"><i class="fa fa-bars" aria-hidden="true"></i></span>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
        </div>
      </div>
    </div>
+
+  <!-- Mobile-menu Start -->
+  <div class="mobile-menu-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="mobile-menu">
+            <nav id="dropdown">
+              <ul>
+                <li class="active"><a href="#"></a>
+                  <li><a href="#">Home</a></li>
+                </li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Rooms & Suits</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">More</a>
+                  <ul class="menu-dropdown">
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Blog</a></li>
+                  </ul>
+                </li> 
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Mobile-menu --> 
+
+
 </header>
 
 <script>

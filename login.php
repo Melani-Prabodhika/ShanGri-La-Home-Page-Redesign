@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "controller.php";
 ?>
 
@@ -40,7 +41,7 @@ require "controller.php";
            <div class="login_title text-center">
              <h2>LOGIN</h2>
            </div>
-           <form action="" method="POST" class="sign-in">
+           <form action="login.php" method="POST" class="sign-in">
               <?php
                 if(count($error) > 0){
               ?>

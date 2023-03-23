@@ -8,7 +8,7 @@
          </div>
          <div class="service">
            <ul>
-             <li><a href="#">About hotels & resorts</a></li>
+             <li><a href="#">About Hotels & Resorts</a></li>
              <li><a href="#">Gallery</a></li>
              <li><a href="#">Terms & Conditions</a></li>
              <li><a href="#"> Privacy Statements</a></li>
@@ -89,5 +89,14 @@
 <!-- Bootstrap JS  --> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+<!-- main js --> 
+<script src="js/main.js"></script>
+
 </body>
 </html>
+
+<?php
+if(isset($_POST['logout'])){
+  header("Location: logout.php");
+}
+?>

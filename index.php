@@ -34,7 +34,7 @@ require "header.php";
       </div>
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
         <div class="hero-text">
-          <h1 class="main-text center"><span class="orange"><strong>Main Title</strong> </span></strong></span> </h1><br>
+          <h1 class="main-text center orange"><strong>Main Title</strong></h1><br>
           <div class="sub-text center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
       </div>
     </div>
@@ -81,19 +81,19 @@ require "header.php";
 
 <!-- About -->
 <div id="about">
-   <div class=" container-fluid">
+   <div class="container-fluid">
      <div class="row">
-      <div class="col-md-6 col-sm-12 text-area">
+      <div class="col-lg-6 col-md-12 col-sm-12 text-area">
          <div class="about-text">
              <div class="col-md-12 col-sm-12 text-center">
                <h3>About</h3><br>
                <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente,
                  totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed vero unde, recusandae sit vero unde, sedrecusandae sit vero unde, recusandae sit vero unde, incidunt et ea quo dolore ... </p>
-                 <a href="#" class="btn-orange">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+               <a href="#" class="btn-orange">Read More <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
              </div>
          </div>
       </div>
-      <div class="col-md-6 col-sm-12 img-responsive ">
+      <div class="col-lg-6 col-md-12 col-sm-12 img-responsive">
          <div class="lead col-sm-12 col-xm-12 text-center ">
            <div class="img-about">
              <div class="img"><img src="img/hotel image.png" alt="#"></div>
@@ -228,10 +228,9 @@ require "header.php";
       </div>
     </div>
     <div class="offer-content">
+      <!-- <input type="radio" name="radio-btn" id="radio1">     
+      <input type="radio" name="radio-btn" id="radio2"> -->
       <div class="row">
-          <!-- <input type="radio" name="radio-btn" id="radio1">     
-          <input type="radio" name="radio-btn" id="radio2">      
-          <input type="radio" name="radio-btn" id="radio3"> -->
         <div class="col-md-4 col-sm-12 col-xs-12">
           <div class="single-offer">
             <div class="feature-img"><a href="#"><img alt="offer" src="img/pexels-pixabay-279746.jpg"></a>
@@ -277,15 +276,58 @@ require "header.php";
             </div>
           </div>
         </div>
-        <!-- <div class="navigation-auto">
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-        </div> -->
       </div>
-      <!-- <div class="navigatiob-manual">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-      </div> -->
+      <div class="row offer-2">
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="single-offer">
+            <div class="feature-img"><a href="#"><img alt="offer" src="img/pexels-pixabay-279746.jpg"></a>
+              <div class="overley"></div>
+            </div>
+            <div class="offer-content text-center">
+              <h3><a href="#"><strong>Rooms & Suits</strong></a></h3>
+              <span><div class="date">01 Feb 2023 - 28 Feb 2023</div></span>
+              <div class="offer-text">Book Early and Save with Flexibility.</div>
+              <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eveniet nobis aliquam quam odio quisquam cupiditate dicta recusandae ratione saepe impedit, maxime, earum omnis quia sint.</p>
+              <div class="price"><span>From LKR 25,000.00 Average Per Night</span></div>
+              <a class="theme-btn-orange" href="#">View Details</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="single-offer">
+            <div class="feature-img"><a href="#"><img alt="offer" src="img/pexels-helena-lopes-1861785.jpg"></a>
+              <div class="overley"></div>
+            </div>
+            <div class="offer-content text-center">
+              <h3><a href="#"><strong>Rooms & Suits</strong></a></h3>
+              <span><div class="date">01 Feb 2023 - 28 Feb 2023</div></span>
+              <div class="offer-text">Book Early and Save with Flexibility.</div>
+              <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eveniet nobis aliquam quam odio quisquam cupiditate dicta recusandae ratione saepe impedit, maxime, earum omnis quia sint.</p>
+              <div class="price"><span>From LKR 25,000.00 Average Per Night</span></div>
+              <a class="theme-btn-orange" href="#">View Details</a> 
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 col-xs-12">
+          <div class="single-offer">
+            <div class="feature-img"><a href="#"><img alt="offer" src="img/pexels-andrea-piacquadio-3775141.jpg"></a>
+              <div class="overley"></div>
+            </div>
+            <div class="offer-content text-center">
+              <h3><a href="#"><strong>Rooms & Suits</strong></a></h3>
+              <span><div class="date">01 Feb 2023 - 28 Feb 2023</div></span>
+              <div class="offer-text">Book Early and Save with Flexibility.</div>
+              <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus eveniet nobis aliquam quam odio quisquam cupiditate dicta recusandae ratione saepe impedit, maxime, earum omnis quia sint.</p>
+              <div class="price"><span>From LKR 25,000.00 Average Per Night</span></div>
+              <a class="theme-btn-orange" href="#">View Details</a> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+      </div>
     </div>
   </div>
 </div>
@@ -295,13 +337,3 @@ require "header.php";
 require "footer.php";
 ?>
 
-<script type="text/javascript">
-  let counter = 1;
-  setInterval(function(){
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if(counter > 3){
-      counter = 1;
-    }
-  }, 5000);
-</script>
